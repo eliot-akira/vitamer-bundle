@@ -61,6 +61,7 @@ This is an elegant haiku from [micro-env](https://github.com/WebReflection/micro
 ## Build all variations
 
 ~~~bash
+npm install
 npm start
 ~~~
 
