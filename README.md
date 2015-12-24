@@ -67,7 +67,7 @@ npm start
 ## Example page
 
 ~~~bash
-npm example
+npm run example
 ~~~
 
 This command starts a [tiny static file server](https://github.com/WebReflection/tiny-cdn) to show an example page.
