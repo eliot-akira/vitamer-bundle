@@ -1,13 +1,10 @@
-## Vitamer bundle
+# Vitamer bundle
 
 This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library.
-#### Purpose
 
-The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
+**Purpose** -  The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
 
----
-
-### Standard
+## Standard
 
 [vitamer.js](build/vitamer.js)
 
@@ -17,7 +14,7 @@ require('vitamer-bundle');
 
 The standard bundle includes: [DOM4](https://github.com/WebReflection/dom4), [Document Register Element](https://github.com/WebReflection/document-register-element), [ESClass](https://github.com/WebReflection/es-class), [DOMClass](https://github.com/WebReflection/dom-class), [Restyle](https://github.com/WebReflection/restyle)
 
-### DOMClass mixins
+## DOMClass mixins
 
 [dom-class-mixins.js](build/dom-class-mixins.js)
 
@@ -27,7 +24,7 @@ require('vitamer-bundle/mixins');
 
 Mixins include: *bindings* and *data*
 
-### Query Result
+## Query Result
 
 [query-result.js](build/query-result.js) - exported as window.$
 [query-result.node.js](build/query-result.node.js) - exported as module
@@ -38,7 +35,7 @@ var $ = require('vitamer-bundle/$');
 
 [Rethinking the $](https://github.com/WebReflection/query-result) - a tiny (1.44kB!) and versatile utility - simplify DOM queries as an array: filter, map, on, off..
 
-### All
+## All
 
 [vitamer-mixins-qr.js](build/vitamer-mixins-qr.js)
 
@@ -48,9 +45,7 @@ require('vitamer-bundle/all');
 
 The "all" bundle includes: the standard bundle, DOMClass mixins, and Query Result as global $.
 
----
-
-### Extra
+## Extra
 
 **DOM Events**
 
@@ -60,15 +55,13 @@ var $ = require('vitamer-bundle/events');
 
 This is an elegant haiku from [micro-env](https://github.com/WebReflection/micro-env), a "tweet-sized enriched environment". It adds event shortcuts to HTML elements: emit, on, off, once. It's included here because I like it.
 
----
-
-### Build all variations
+## Build all variations
 
 ~~~bash
 npm start
 ~~~
 
-### Example page
+## Example page
 
 ~~~bash
 npm example
@@ -76,8 +69,6 @@ npm example
 
 This command starts a [tiny static file server](https://github.com/WebReflection/tiny-cdn) to show an example page.
 
----
-
-### Credit
+## Credit
 
 All license, credit and respect goes to Mr [Andrea Giammarchi](https://github.com/WebReflection), who is the author of Vitamer and its modules.
