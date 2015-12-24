@@ -1,7 +1,6 @@
 ## Vitamer bundle
 
 This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library.
-
 #### Purpose
 
 The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
@@ -9,6 +8,8 @@ The idea is to gather all modules in one place, and make them available to inclu
 ---
 
 ### Standard
+
+[vitamer.js](build/vitamer.js)
 
 ~~~javascript
 require('vitamer-bundle');
@@ -18,6 +19,8 @@ The standard bundle includes: [DOM4](https://github.com/WebReflection/dom4), [Do
 
 ### DOMClass mixins
 
+[dom-class-mixins.js](build/dom-class-mixins.js)
+
 ~~~javascript
 require('vitamer-bundle/mixins');
 ~~~
@@ -26,6 +29,9 @@ Mixins include: *bindings* and *data*
 
 ### Query Result
 
+[query-result.js](build/query-result.js) - exported as window.$
+[query-result.node.js](build/query-result.node.js) - exported as module
+
 ~~~javascript
 var $ = require('vitamer-bundle/$');
 ~~~
@@ -33,6 +39,8 @@ var $ = require('vitamer-bundle/$');
 [Rethinking the $](https://github.com/WebReflection/query-result) - a tiny (1.44kB!) and versatile utility - simplify DOM queries as an array: filter, map, on, off..
 
 ### All
+
+[vitamer-mixins-qr.js](build/vitamer-mixins-qr.js)
 
 ~~~javascript
 require('vitamer-bundle/all');
