@@ -15,7 +15,7 @@ require('vitamer-bundle');
 The standard bundle includes:
 
 - [DOM4](https://github.com/WebReflection/dom4) - Modern DOM functionalities for every browser
-- [document.registerElement](https://github.com/WebReflection/document-register-element)
+- [document.registerElement](https://github.com/WebReflection/document-register-element) - A stand-alone working lightweight version of the W3C Custom Elements specification
 - [ESClass](https://github.com/WebReflection/es-class) - ECMAScript 3 to 6 compatible Class definition
 - [DOMClass](https://github.com/WebReflection/dom-class) - A lightweight, cross browser, simplification of WebComponents
 - [Restyle](https://github.com/WebReflection/restyle) - CSS as JavaScript object
