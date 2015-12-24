@@ -1,8 +1,6 @@
 # Vitamer bundle
 
-This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library.
-
-**Purpose** -  The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
+This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library. The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
 
 ## Standard
 
@@ -12,7 +10,7 @@ This repo includes bundle variations for the [Vitamer](https://github.com/WebRef
 require('vitamer-bundle');
 ~~~
 
-The standard bundle includes: [DOM4](https://github.com/WebReflection/dom4), [Document Register Element](https://github.com/WebReflection/document-register-element), [ESClass](https://github.com/WebReflection/es-class), [DOMClass](https://github.com/WebReflection/dom-class), [Restyle](https://github.com/WebReflection/restyle)
+The standard bundle includes: [DOM4](https://github.com/WebReflection/dom4), [document.registerElement](https://github.com/WebReflection/document-register-element), [ESClass](https://github.com/WebReflection/es-class), [DOMClass](https://github.com/WebReflection/dom-class), and  [Restyle](https://github.com/WebReflection/restyle)
 
 ## DOMClass mixins
 
@@ -27,13 +25,16 @@ Mixins include: *bindings* and *data*
 ## Query Result
 
 [query-result.js](build/query-result.js) - exported as window.$
+
 [query-result.node.js](build/query-result.node.js) - exported as module
 
 ~~~javascript
 var $ = require('vitamer-bundle/$');
 ~~~
 
-[Rethinking the $](https://github.com/WebReflection/query-result) - a tiny (1.44kB!) and versatile utility - simplify DOM queries as an array: filter, map, on, off..
+A tiny (1.44kB!) and versatile utility - simplify DOM queries as an array: filter, map, on, off..
+
+See: [Rethinking the $](https://github.com/WebReflection/query-result)
 
 ## All
 
@@ -50,7 +51,7 @@ The "all" bundle includes: the standard bundle, DOMClass mixins, and Query Resul
 **DOM Events**
 
 ~~~javascript
-var $ = require('vitamer-bundle/events');
+require('vitamer-bundle/events');
 ~~~
 
 This is an elegant haiku from [micro-env](https://github.com/WebReflection/micro-env), a "tweet-sized enriched environment". It adds event shortcuts to HTML elements: emit, on, off, once. It's included here because I like it.
