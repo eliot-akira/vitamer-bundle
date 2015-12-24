@@ -1,6 +1,8 @@
 # Vitamer bundle
 
-This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library. The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
+This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library.
+
+The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify or script tag.
 
 ## Standard
 
@@ -44,7 +46,7 @@ See: [Rethinking the $](https://github.com/WebReflection/query-result)
 require('vitamer-bundle/all');
 ~~~
 
-The "all" bundle includes: the standard bundle, DOMClass mixins, and Query Result as global $.
+The "all" bundle includes: the standard bundle, DOMClass mixins, and Query Result as global $
 
 ## Extra
 
@@ -69,6 +71,10 @@ npm example
 ~~~
 
 This command starts a [tiny static file server](https://github.com/WebReflection/tiny-cdn) to show an example page.
+
+## Install
+
+For now, `npm install` this Github repo. Please note that this is not an official repo for Vitamer, just a fan page.
 
 ## Credit
 
