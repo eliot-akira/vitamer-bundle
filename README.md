@@ -2,9 +2,11 @@
 
 This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library.
 
-### Purpose
+#### Purpose
 
 The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify, or script tag.
+
+---
 
 ### Standard
 
@@ -12,7 +14,7 @@ The idea is to gather all modules in one place, and make them available to inclu
 require('vitamer-bundle');
 ~~~
 
-This includes: [DOM4](https://github.com/WebReflection/dom4), [Document Register Element](https://github.com/WebReflection/document-register-element), [ESClass](https://github.com/WebReflection/es-class), [DOMClass](https://github.com/WebReflection/dom-class), [Restyle](https://github.com/WebReflection/restyle)
+The standard bundle includes: [DOM4](https://github.com/WebReflection/dom4), [Document Register Element](https://github.com/WebReflection/document-register-element), [ESClass](https://github.com/WebReflection/es-class), [DOMClass](https://github.com/WebReflection/dom-class), [Restyle](https://github.com/WebReflection/restyle)
 
 ### DOMClass mixins
 
@@ -36,7 +38,9 @@ var $ = require('vitamer-bundle/$');
 require('vitamer-bundle/all');
 ~~~
 
-This includes: the standard bundle, DOMClass mixins, and Query Result as global $.
+The "all" bundle includes: the standard bundle, DOMClass mixins, and Query Result as global $.
+
+---
 
 ### Extra
 
@@ -47,6 +51,8 @@ var $ = require('vitamer-bundle/events');
 ~~~
 
 This is an elegant haiku from [micro-env](https://github.com/WebReflection/micro-env), a "tweet-sized enriched environment". It adds event shortcuts to HTML elements: emit, on, off, once. It's included here because I like it.
+
+---
 
 ### Build all variations
 
@@ -61,6 +67,8 @@ npm example
 ~~~
 
 This command starts a [tiny static file server](https://github.com/WebReflection/tiny-cdn) to show an example page.
+
+---
 
 ### Credit
 
