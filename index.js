@@ -1,1 +1,1 @@
-require('./build/vitamer');
+require('./build/vitamer-core');

@@ -31,9 +31,8 @@ HTMLElement.prototype.once = function (t, h, c) {
   return this.on(t, f, !!c);
 };
 
-(function(w, p, d){
-  d = w.document;
-  d.on = w.on = p.on;
-  d.off = w.off = p.off;
-  d.emit = w.emit = p.emit;
-}(window, HTMLElement.prototype));
+(function(w, d, dp, p){
+  w.on = d.on = dp.on = p.on;
+  w.off = d.off = dp.off = p.off;
+  w.emit = d.emit = dp.emit = p.emit;
+}(window, window.document, window.DOMClass.prototype, HTMLElement.prototype));

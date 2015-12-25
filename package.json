@@ -1,5 +1,5 @@
 {
-  "version": "0.0.1",
+  "version": "0.1.0",
   "name": "vitamer-bundle",
   "description": "Bundle variations for Vitamer",
   "repository": {
@@ -9,17 +9,16 @@
   "main": "./index.js",
   "scripts": {
     "start": "npm run build",
-    "build": "mkdir -p build && npm run build-core && npm run build-mixins && npm run build-query-result && npm run build-standard && npm run build-standard-qr && npm run build-standard-mixins && npm run build-standard-mixins-qr && npm run build-dom-events",
-    "build-core": "cat template/license.min.txt > build/vitamer-core.js && browserify src/core.js | uglifyjs >> build/vitamer-core.js",
+    "build": "mkdir -p build && npm run build-core && npm run build-mixins && npm run build-query-result && npm run build-restyle && npm run build-standard && npm run build-full-bundle && npm run build-dom-events",
+    "build-core": "cat template/license.min.txt > build/vitamer-core.js && browserify src/core.js | derequire | uglifyjs >> build/vitamer-core.js",
     "build-standard": "cat template/license.min.txt > build/vitamer.js && browserify src/standard.js | uglifyjs >> build/vitamer.js",
-    "build-standard-qr": "cat build/vitamer.js build/query-result.js > build/vitamer-qr.js",
-    "build-standard-mixins": "cat build/vitamer.js build/dom-class-mixins.js > build/vitamer-mixins.js",
-    "build-standard-mixins-qr": "cat build/vitamer.js build/dom-class-mixins.js build/query-result.js > build/vitamer-mixins-qr.js",
+    "build-full-bundle": "cat build/vitamer.js build/dom-class-mixins.js build/query-result.js > build/vitamer-all.js",
     "build-mixins": "cat template/mixin.before node_modules/dom-class/build/dom-class-mixins.js > build/dom-class-mixins.js",
     "build-query-result": "cp node_modules/query-result/build/query-result.js node_modules/query-result/build/query-result.node.js build",
+    "build-restyle": "cat template/license.min.txt node_modules/restyle/build/restyle.js template/restyle.after > build/restyle.js",
     "build-dom-events": "browserify src/dom-events.js | uglifyjs > build/dom-events.js",
     "clean": "rm build/*",
-    "example": "tiny-cdn run -s=./example"
+    "demo": "tiny-cdn run -s=./demo -p=3030 -ma=0"
   },
   "devDependencies": {
     "browserify": "^12.0.1",
