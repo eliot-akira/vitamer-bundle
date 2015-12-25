@@ -73,7 +73,7 @@ Core bundle + Restyle
 require('vitamer-bundle/all');
 ~~~
 
-Core bundle + Restyle, DOMClass mixins, Query Result as global $
+Core bundle + Restyle, DOMClass mixins, and Query Result as global $
 
 ## Extra
 
