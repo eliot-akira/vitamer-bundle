@@ -1,10 +1,8 @@
 # Vitamer bundle
 
-This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library.
+This repo includes bundle variations for the [Vitamer](https://github.com/WebReflection/dom-class#what-is-vitamer-js-) library. The idea is to gather all modules in one place, and make each of them available to include as needed, with require/browserify or script tag.
 
-The idea is to gather all modules in one place, and make them available to include as needed, with require/browserify or script tag.
-
-## "Core"
+## Core
 
 [vitamer-core.js](build/vitamer-core.js)
 
@@ -55,7 +53,9 @@ require('vitamer-bundle/restyle');
 
 This extends DOMClass with [Restyle](https://github.com/WebReflection/restyle) features.
 
-## "Standard" bundle
+## Standard and All
+
+**Standard bundle**
 
 [vitamer.js](build/vitamer.js)
 
@@ -65,7 +65,7 @@ require('vitamer-bundle/standard');
 
 Core bundle + Restyle
 
-## "All" bundle
+**All bundle**
 
 [vitamer-all.js](build/vitamer-all.js)
 
@@ -85,7 +85,9 @@ require('vitamer-bundle/events');
 
 This is an elegant haiku from [micro-env](https://github.com/WebReflection/micro-env), a "tweet-sized enriched environment". It adds event shortcuts to HTML elements: emit, on, off, once. It's included here because I like it.
 
-## Build all variations
+## Build
+
+The following will build all variations.
 
 ~~~bash
 npm install
@@ -98,13 +100,13 @@ Clean build folder
 npm run clean
 ~~~
 
-## Example page
+## Example
 
 ~~~bash
 npm run demo
 ~~~
 
-This command starts a [tiny static file server](https://github.com/WebReflection/tiny-cdn) to show an example page.
+This command starts a [tiny static file server](https://github.com/WebReflection/tiny-cdn) to show a demo page.
 
 ## Install
 
