@@ -1,1 +1,1 @@
-require('./build/vitamer-mixins-qr');
+require('./build/vitamer-all');
