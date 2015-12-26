@@ -79,6 +79,8 @@ Core bundle + Restyle, DOMClass mixins, and Query Result as global $
 
 **DOM Events**
 
+[dom-events.js](build/dom-events.js)
+
 ~~~javascript
 require('vitamer-bundle/events');
 ~~~
